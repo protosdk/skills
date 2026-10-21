@@ -1,0 +1,11 @@
+Use your image generation tool to EDIT the attached image {input} with the image prompt below, then save the result in this directory as ./{output} (copy the generated file there). Do not modify or delete any other file. Do not post-process the image yourself (no background removal, no resizing, no cropping): save the generator's output exactly as it is.
+
+IMAGE PROMPT (pass it to the image tool verbatim, with the attached image as the image to edit):
+
+Using the uploaded image of {subject}{gone}, this is one step of separating the character into layers for a 2D game rig (cut-out animation, like Spine or Unity 2D Animation). Each part will be animated as its own layer, so the layer underneath must be complete.
+
+Remove ONLY {remove}. Where {where}, draw what is hidden behind it: {reveal} Use the same {style} as the rest of the character. No trace of what was removed, no stumps, no holes.
+
+Keep everything else locked 100%: the same position and size on the canvas, every remaining outline and its thickness, every remaining detail, all colors and the shading. Keep the flat pure #00FF00 background. Same square canvas, same framing. No text, no shadow, no glow, no new objects.
+
+When finished, reply with the saved file path and its pixel size.

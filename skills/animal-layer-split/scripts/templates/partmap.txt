@@ -1,0 +1,9 @@
+Use your image generation tool to EDIT the attached image {input} with the image prompt below, then save the result in this directory as ./{output} (copy the generated file there). Do not modify or delete any other file. Do not post-process the image yourself (no background removal, no resizing, no cropping): save the generator's output exactly as it is.
+
+IMAGE PROMPT (pass it to the image tool verbatim, with the attached image as the image to edit):
+
+Using the uploaded image of {subject}, make a flat-color part map for a 2D game rig. Keep EXACTLY the same silhouette, the same position and size on the canvas, and the same boundaries between the parts as in the image; do not move, resize or redraw anything. Paint each part with one solid flat color, with no outlines, no shading, no texture and no gradients: {assignments}. The background stays flat pure #00FF00.
+
+Same square canvas, same framing. No text, no other colors.
+
+When finished, reply with the saved file path and its pixel size.

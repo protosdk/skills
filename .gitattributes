@@ -1,0 +1,4 @@
+skills/**/*.md linguist-detectable
+README.md linguist-documentation
+*.png binary
+*.psd binary
