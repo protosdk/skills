@@ -28,7 +28,8 @@ npx skills@latest add protosdk/skills
 ```
 
 Works with any agent that reads `SKILL.md` (Claude Code, Codex and others). The skills call the `codex` CLI
-for image edits and need Python 3 with Pillow and numpy.
+for image edits and need Python 3 with Pillow and numpy; frame-edit-loop also needs scipy, and ffmpeg for
+its GIF previews.
 
 ## Skills
 
@@ -38,15 +39,17 @@ for image edits and need Python 3 with Pillow and numpy.
   untested; humans, props, scenes and other art styles are out. The agent decides the layers itself (which
   parts, how many, in what order) from the image; it then peels parts off front to back, cuts from
   flat-colour part maps, and measures every step.
+- **[frame-edit-loop](./skills/frame-edit-loop/SKILL.md)**: turn one character illustration into a short
+  frame-by-frame loop in the same pose, plus a preview GIF at about 16 fps. Keyframes and in-betweens are
+  image edits of the illustration, one change at a time, redrawn until no locked part has moved; small
+  motion is a smooth warp, effects are overlays, and every frame is stabilised so nothing shimmers. The GIF
+  uses one palette per animation, ordered dithering and exact frame timing. Tested on one chibi character in
+  clothes holding a book, in three loops; walk cycles, turns and other big pose changes are out.
 
 Planned, for the same art direction and cast:
 
 - **2d-rig-preview**: preview a layered rig moving before it reaches the engine (hierarchy, bending joints,
   breathing rhythm) to catch seams and hinges early.
-- **frame-edit-loop**: frame-by-frame animation by editing one base frame, one change at a time, with
-  drift measured on every frame.
-- **gif-encode**: GIF previews without banding or flicker (one palette per animation, ordered dithering,
-  exact frame timing).
 - **animation-principles**: the vocabulary and rules for idle loops and small character motion, so agents
   ask for the right thing.
 

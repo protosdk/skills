@@ -1,0 +1,11 @@
+Use your image generation tool to EDIT the attached image {input} with the image prompt below{ref_note}, then save the result in this directory as ./{output} (copy the generated file there). Do not modify or delete any other file. Do not post-process the image yourself (no background removal, no resizing, no cropping): save the generator's output exactly as it is, on its flat green background.
+
+IMAGE PROMPT (pass it to the image tool verbatim, with {input} as the image to edit{ref_role}):
+
+Using the uploaded image of {subject}, {role} Keep {locked} exactly where they are, with the same {style}. Keep the flat pure #00FF00 background.
+
+Make ONLY this change: {change}
+
+Do not move, redraw, restyle or re-pose anything else. Same square 1024x1024 canvas, same framing, same character size. {motion} No text, no letters, no shadow, no glow, no new objects.
+
+When finished, reply with the saved file path and its pixel size.
